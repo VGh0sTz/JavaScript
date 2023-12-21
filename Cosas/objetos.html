@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Nombre="aJulio";
+        const alumno ={
+            Nombre:"Julio",
+            Apellido:"Droosanxz",
+            DNI:"3213156F",
+            Edad:25,
+            Altura:165,
+            Estudios:"Abogado",
+            SOUT(){
+                document.write('<h1>DATOS ESTUDIANTES</h1> <br> Nombre:  '+this.Nombre+"<br> apellido: "+this.Apellido+" <br>DNI: "+this.DNI+"<br> Edad: "+this.Edad+",<br> Altura: "+this.Altura+"<br> Estudios: "+this.Estudios)
+            }
+        }
+        alumno.Altura=150;
+        alumno.SOUT()
+    </script>
+</body>
+</html>

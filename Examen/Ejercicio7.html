@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero_ganador=parseInt(Math.random()*101)
+        console.log(numero_ganador)
+        let numero=0
+        let ganaste=false
+        for(var i=0;i<5;i++){
+            numero=parseInt(prompt("Introduce tu numero "))
+            if(numero===numero_ganador){
+                ganaste=true
+                break
+            }
+        }
+        if(ganaste==false){
+            console.log("Otra vez será")
+        }else{
+            console.log("Enhorabuena GANASTE LA LOTERIA ")
+        }
+        
+    </script>
+</body>
+</html>

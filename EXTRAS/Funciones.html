@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*E1
+        function producto_escalar(){
+        var v1=prompt("primera cordenada del vector 1")
+        var v2=prompt("segunda cordenada del vector 1")
+        var y1=prompt("primera cordenada del vector 2")
+        var y2=prompt("segunda cordenada del vector 2")
+        var resultado=(v1*v2)+(y1*y2)
+        return resultado
+        }
+        */
+
+        /*E2
+        var m1=[[1,2],
+                [4,6]]
+        var m2=[[9,8],
+                [6,4]]
+        function producto_matrices_reales2x2(m1,m2){
+        var resul=[]
+        for(var i=0;i<2;i++){
+            resul[i]=new Array(2);
+        }
+        resul[0][0]=(m1[0][0]*m2[0][0])+(m1[0][1]*m2[1][0])
+        resul[0][1]=(m1[0][0]*m2[0][1])+(m1[0][1]*m2[1][1])
+        resul[1][0]=(m1[1][0]*m2[0][0])+(m1[1][1]*m2[1][0])
+        resul[1][1]=(m1[1][0]*m2[0][1])+(m1[1][1]*m2[1][1])
+        return resul
+        /*[(),()]
+               [(),()]]
+        }
+        console.log(m1)
+        console.log(m2)
+        console.log(producto_matrices_reales2x2(m1,m2))
+        */
+
+        /*E3
+        var caracter=prompt("introduce un caracter")
+        caracter=caracter.toLowerCase().charAt(0)
+        function esvocal(caracter){
+            if(caracter=='a'){
+                return true
+            }else if(caracter=='e'){
+                return true
+            }else if(caracter=='i'){
+                return true
+            }else if(caracter=='o'){
+                return true
+            }else if(caracter=='u'){
+                return true
+            }else{
+                return false
+            }
+        }
+        console.log(esvocal(caracter))
+        */
+
+        /*E4
+        var c=prompt("introduce un caracter")
+        var n=prompt("cuantas veces lo quieres generar")
+        n=parseInt(n)
+        function generar_caracteres(n,c){
+            var s=""
+            for(var i=0;i<n;i++){
+                s=s+c
+            }
+            return s;
+        }
+        console.log(generar_caracteres(n,c))
+        */
+        var arr="1225"
+        function sumaArreglo(arr){
+            var res=""+arr
+            var suma=0
+            var num
+            for(var i=0;i<res.length;i++){
+                num=parseInt(res.charAt(i))
+                suma=suma+num
+            }
+            var len=res.length
+            return suma
+        }
+        console.log(sumaArreglo(arr))
+    </script>
+</body>
+</html>

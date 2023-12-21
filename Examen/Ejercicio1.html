@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notas=0
+        let contador=0
+        for(var i=0;i<5;i++){
+            notas=notas+parseFloat(prompt("Introduce una nota"))
+            contador++
+        }
+        let media=notas/contador
+        console.log("Esta es tu nota: "+media)
+        if(media===5){
+            console.log("Estás aprobado por los pelos, a estudiar anda")
+        }else if(media>5){
+            console.log("Estás aprobado")
+        }else if(media<5){
+            console.log("Suspendido tira a estudiar")
+        }
+    </script>
+</body>
+</html>

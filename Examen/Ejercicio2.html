@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let numero=parseInt(prompt("Introduce un numero"))
+        let divisible=0
+        for(var i=1;i<=numero;i++){
+            if(numero%i==0){
+                divisible++
+            }
+        }
+        if(divisible==2){
+            console.log("Es primo")
+        }else{
+            console.log("No es primo")
+        }
+
+        
+    </script>
+</body>
+</html>

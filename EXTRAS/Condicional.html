@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* E1
+        for(var i=0;i<=1000;i++){
+            console.log(i)
+        }
+        */
+ 
+        /* E2
+        let a=prompt("A?")
+        a=parseInt(a)
+        let b=prompt("B?")
+        b=parseInt(b)
+        var min,max;
+        if(a<b){
+            min=a 
+            max=b
+        }else {
+            min=b
+            max=a
+        }
+        
+        for(var i=min;i<=max;i++){
+            if(i%2!=0){
+                console.log(i)
+            }
+        }
+        */
+       
+        /*E3
+        var suma=0;
+        for(var i=0;i<=1000;i++){
+            if(i%2==0){
+                suma+=i
+            }
+        }
+        console.log(suma)
+        */
+
+        /*E4
+        var cifras=0
+        let n=prompt("numero entero")
+        n=parseInt(n)
+        while(n>=10){
+            if(n%10==0){
+                cifras++
+                n=n/10
+            }
+        }
+        console.log(cifras)
+        */
+
+        /*E5
+        var a=0
+        var num=prompt("numero?")
+        num=parseInt(num)
+        var cant=1
+        while(a>=0){
+            a=prompt("numero?")
+            a=parseInt(a)
+            if(a>=0){
+                num=num+a
+                cant++
+            }
+        }
+        let media=num/cant
+        console.log(num)
+        console.log(cant)
+        console.log(media)
+        */
+
+        /*E6
+        var num=prompt("numero?")
+        num=parseInt(num)
+        if(num<0){
+            console.log("negativo")
+        }else if(num==0){
+            console.log("zero")
+        }else{
+            console.log("positivo")
+        }
+        */
+
+        /*E7
+        var num=prompt("numero 1")
+        var num2=prompt("numero 2")
+        var respuesta;
+        if(num>num2){
+            respuesta=num-num2
+        }else respuesta=num2-num
+        console.log(respuesta)
+        */
+        
+        /*E8
+        var euros=prompt("introduce euros")
+        var euros=parseInt(euros)
+        var dolares=euros*1.08;
+        console.log(dolares)
+        */
+
+        /*E9
+        var dolares=prompt("introduce dolares")
+        dolares=parseInt(dolares)
+        var euros=dolares*0.92
+        console.log(euros)
+        */
+        
+        /*E10
+        var num1=prompt("num1")
+        num1=parseInt(num1)
+        var num2=prompt("num2")
+        num2=parseInt(num2)
+        var num3=prompt("num3")
+        num3=parseInt(num3)
+        if(num1<num2<num3){
+            console.log("ordenado mayor a menor")
+        }else console.log("no ordenado de mayor a menor")
+        */
+
+        /*E11
+        var num1=prompt("num1")
+        num1=parseInt(num1)
+        var num2=prompt("num2")
+        num2=parseInt(num2)
+        var num3=prompt("num3")
+        num3=parseInt(num3)
+        if(num2===(num1+1) && num3===(num2+1)){
+            console.log("son consecutivos")
+        }else console.log("no son consecutivos")
+        */
+
+        /*E12
+        var num1=prompt("num1")
+        num1=parseInt(num1)
+        var num2=prompt("num2")
+        num2=parseInt(num2)
+        var num3=prompt("num3")
+        num3=parseInt(num3)
+        if(num1>num2){
+            if(num1>num3){
+                console.log(num1)
+                if(num2>num3){
+                    console.log(num2)
+                    console.log(num3)
+                }else{
+                    console.log(num3)
+                    console.log(num2)
+                }
+            }else{
+                console.log(num3)
+                console.log(num1)
+                console.log(num2)
+            }
+        }else{
+            if(num2>num3){
+                console.log(num2)
+                if(num3>num1){
+                console.log(num3)
+                console.log(num1)
+                }else{
+                console.log(num1)
+                console.log(num3)
+                }
+            }else{
+                console.log(num3)
+                console.log(num2)
+                console.log(num1)
+            }
+        }
+        */
+
+        /*E13
+        var hora=prompt("hora?")
+        hora=parseInt(hora)
+        var min=prompt("min?")
+        min=parseInt(min)
+        var seg=prompt("seg?")
+        seg=parseInt(seg)
+        if(seg+1===60){
+            seg=0
+            if(min+1==60){
+                min=0
+                if(hora+1===24){
+                    hora=0
+                }else{
+                    hora=hora+1
+                }
+            }else {
+                min=min+1
+            }
+        }else {
+            seg=seg+1
+        }
+        console.log("hora: "+hora+":"+min+":"+seg)
+        */
+
+        /*E14
+        var precio=15
+        precio=parseInt(precio)
+        var personas=prompt("cuantos personas?")
+        personas=parseInt(personas)
+        var dias=prompt("cuantos dias se quedarán?")
+        dias=parseInt(dias)
+        precio=precio*dias
+        if(dias>=7 && personas>5){
+            precio=precio-((precio*25)/100)
+        }
+        console.log(precio)
+        */
+
+        /*E15
+        var mes=prompt("cuál mes?")
+        mes=parseInt(mes)
+        var año=prompt("que año?")
+        año=parseInt(año)
+        var dias
+        if(mes==1){
+            dias=31
+        }else if(mes==2){
+            if(año%4==0 && año%100!=0){
+                dias=29
+            }else dias=30
+        }else if(mes==3){
+            dias=31
+        }else if(mes==4){
+            dias=30
+        }else if(mes==5){
+            dias=31
+        }else if(mes==6){
+            dias=30
+        }else if(mes==7){
+            dias=31
+        }else if(mes==8){
+            dias=31
+        }else if(mes==9){
+            dias=30
+        }else if(mes==10){
+            dias=31
+        }else if(mes==11){
+            dias=30
+        }else if(mes==12){
+            dias=31
+        }
+        console.log(dias)
+        */
+
+        /*E16
+        var opcion=prompt("opcion? D=a dolares / E=a euros")
+        if(opcion=='D' || opcion=='d'){
+        var euros=prompt("introduce euros")
+        var euros=parseInt(euros)
+        var dolares=euros*1.08;
+        console.log(dolares)
+        }else if(opcion=='E' || opcion=='e'){
+        var dolares=prompt("introduce dolares")
+        dolares=parseInt(dolares)
+        var euros=dolares*0.92
+        console.log(euros)
+        }else console.log("eri bobo?")
+        */
+
+        /*E17
+        var opcion=prompt("opcion? 0=cuad/1=rect/2=tri")
+        if(opcion==0){
+        var lado=prompt("lado cuadrado?")
+        var lado=parseFloat(lado)
+        var perimetro=lado*4
+        var area=lado*lado
+        console.log("area_cuad: "+area)
+        console.log("perimetro_cuad: "+perimetro)
+        }else if(opcion==1){
+        var lado=prompt("lado1 rectangulo?")
+        var lado=parseFloat(lado)
+        var lado2=prompt("lado2 rectangulo?")
+        var lado2=parseFloat(lado2)
+        if(lado==lado2){
+            console.log("error, seria un cuadrado")
+        }else {
+        var area=lado*lado2
+        var perimetro=(lado*2)+(lado2*2)
+        console.log("area_rect: "+area)
+        console.log("perimetro_rect: "+perimetro)
+        }
+        }else if(opcion==2){
+        var base=prompt("base triangulo?")
+        var base=parseFloat(base)
+        var l1=prompt("l1 triangulo?")
+        var l1=parseFloat(l1)
+        var l2=prompt("l2 triangulo?")
+        var l2=parseFloat(l2)
+        var h=Math.sqrt(Math.pow(l1,2)-Math.pow((base/2),2))
+        var area=(base*h)/2
+        var perimetro=base+l1+l2
+        console.log("area_tri: "+area)
+        console.log("perimetro_tri: "+perimetro)
+        console.log("altura: "+h)
+        }else console.log("opcion incorrecta error!")
+        */
+
+        /*E18
+        var num=prompt("numero?")
+        num=parseFloat(num)
+        if(num<0){
+            console.log("error num<0")
+        }else{
+            var raiz=Math.sqrt(num)
+            console.log(raiz)
+        }
+        */
+
+    </script>
+</body>
+</html>

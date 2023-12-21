@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let precio=0
+        let personas=parseInt(prompt("Cuantas personas?"))
+        let dias=parseInt(prompt("Cuantos Dias?"))
+        precio_x_dia=15
+        precio=precio_x_dia*dias
+        if(personas>5 && dias>=7){
+            precio=precio*0.75
+        }
+        console.log("Ok, Costará un total de: "+precio)
+    </script>
+</body>
+</html>
